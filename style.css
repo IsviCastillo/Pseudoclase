@@ -1,107 +1,47 @@
-:root{
-    --color-primary:rgb(67, 72, 64);
-    --tamaño:20px;
-    --family: Verdana, Geneva, Tahoma, sans-serif;
-    --back-aside:rgb(154, 166, 178);
-    --color:white;
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ background: #7F7FD5;
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); 
 }
 
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-p{
-    color: var(--color-primary);
-    font-size: var(--tamaño);
-    font-family: var(--family);
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: aliceblue;
-    color: #333;
-}
-
-header{
-    background-color: rgb(63, 114, 175);
-    color:white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav ul{
-    list-style: none;
-    margin-top: 10px;
-
-}
-
-nav ul li{
-    display: inline;
-    margin-right: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover{
-    background-color: coral;
-    padding: 5px;
-    border-radius: 10px;
-    transition: background 0.3s,color 0.3s;
-
-}
-
-main{
-    padding: 20px;
-    background-color: white;
-}
-
-section{
-    margin-bottom: 20px;
+.tarjeta {
+  border: 1px  solid rgba(0, 0,0, 0.1);
+  color: white;
+  background: rgb(78, 102, 136);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  cursor: pointer;
 }
 
 
-aside{
-    background-color: aliceblue;
-    padding: 15px;
-    margin: 20px;
-    transition: background-color 0.3s, color 0.3s;
-
-}
-
-aside:hover{
-    background-color:var(--back-aside);
-    color: var(--color);
-    border-radius: 10px;
-
-}
-
-a {
-    text-decoration: none;
-    color: blue;
-    transition: all 0.2s ease;
-}
-
-a:hover {
-    color: coral;
-}
-
-a:active {
-    color: pink;
+.tarjeta:hover {
+  background-color: rgb(113, 192, 187);
 }
 
 
-footer{
-    background-color:rgb(154, 166, 178);
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+.boton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.boton:active {
+  background-color: #b30021;
+  transform: scale(0.95);
 }
