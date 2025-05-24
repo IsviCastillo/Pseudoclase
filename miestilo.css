@@ -1,0 +1,107 @@
+:root{
+    --color-primary:rgb(67, 72, 64);
+    --tamaño:20px;
+    --family: Verdana, Geneva, Tahoma, sans-serif;
+    --back-aside:rgb(154, 166, 178);
+    --color:white;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: var(--color-primary);
+    font-size: var(--tamaño);
+    font-family: var(--family);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: aliceblue;
+    color: #333;
+}
+
+header{
+    background-color: rgb(63, 114, 175);
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: coral;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background 0.3s,color 0.3s;
+
+}
+
+main{
+    padding: 20px;
+    background-color: white;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+
+aside{
+    background-color: aliceblue;
+    padding: 15px;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+aside:hover{
+    background-color:var(--back-aside);
+    color: var(--color);
+    border-radius: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: coral;
+}
+
+a:active {
+    color: pink;
+}
+
+
+footer{
+    background-color:rgb(154, 166, 178);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
